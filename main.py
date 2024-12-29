@@ -19,7 +19,8 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://frontend-ledger-rd3r9w1l5-narathip1598s-projects.vercel.app/"],  
+    allow_origins=["https://frontend-ledger-rd3r9w1l5-narathip1598s-projects.vercel.app/"], 
+    allow_credentials=True, 
     allow_methods=["*"],
     allow_headers=["*"],
 )
